@@ -1,0 +1,147 @@
+:root {
+    --black: #000;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url("../img/background.jpeg");
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+}
+
+p,
+h2,
+h1 {
+    color: #fff;
+    text-decoration: none;
+}
+
+.profile-picture {
+    height: 20rem;
+    width: 22rem;
+    border-radius: 10rem;
+    border: solid 3px mediumvioletred;
+    margin: 1rem;
+}
+
+.name {
+    font-size: 1.5em;
+}
+
+.slogan {
+    font-size: 2em;
+    color: mediumvioletred;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #070236;
+    border-bottom: 1px solid mediumvioletred;
+}
+
+.logo {
+    margin: 0.5rem;
+}
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    display: block;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.navbar-links li a:hover {
+    color: mediumvioletred;
+}
+
+.toggle-button {
+    position: absolute;
+    top: 0.75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0 40px;
+    margin-bottom: 20px;
+}
+
+.home-section {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    line-height: 2em;
+    background-color: #070236;
+    border-radius: 5em;
+    padding: 3em;
+
+}
+
+@media (max-width: 400px) {
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links li {
+        text-align: center;
+    }
+
+    .navbar-links li a {
+        padding: 0.5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
