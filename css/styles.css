@@ -155,7 +155,7 @@ section {
 
 
 
-.language-container {
+.card-container {
     max-width: 100%;
     margin: 0 auto;
     overflow: auto;
@@ -187,10 +187,23 @@ section {
     box-shadow: 0 0 20px 5px rgba(255, 0, 225, 0.5);
 }
 
-.language-logo {
+.card p {
+    color: black;
+}
+
+.language-logo,
+.service-logo {
     max-width: 100%;
     height: inherit;
-    max-height: 70%;
+    max-height: 60%;
+}
+
+.services .card {
+    padding: 20px;
+    margin: 10px;
+    min-width: 200px;
+    max-width: 200px;
+    height: 300px;
 }
 
 .grid {
@@ -207,7 +220,6 @@ section {
 .grid__item {
     height: 200px;
     position: relative;
-    /* Set a fixed height for the grid items */
     padding: 10px;
     text-align: center;
     border: inset;
@@ -229,7 +241,6 @@ div #grid-a.grid__item,
 }
 
 .grid__overlay {
-    /* New styles for the overlay */
     position: absolute;
     top: 0;
     left: 0;
