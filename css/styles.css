@@ -120,6 +120,22 @@ section {
     padding: 2em;
 }
 
+
+#github {
+    height: 36px;
+    width: 44px;
+}
+
+#codewars {
+    height: 30px;
+    width: 30px;
+}
+
+#linkedin {
+    height: 30px;
+    width: 40px;
+}
+
 .home-section,
 .about-text,
 .recommendation {
@@ -191,11 +207,20 @@ section {
     color: black;
 }
 
-.language-logo,
-.service-logo {
+.language-logo {
     max-width: 100%;
     height: inherit;
     max-height: 60%;
+}
+
+.service-logo {
+    max-height: 80%;
+    max-width: 100%;
+}
+
+#design {
+    max-height: 40%;
+    max-width: 80%;
 }
 
 .services .card {
